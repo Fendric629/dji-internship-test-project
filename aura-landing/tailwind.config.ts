@@ -1,15 +1,13 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
-      colors: {
-        brand: '#3D81E3',
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+      boxShadow: {
+        glow: '0 0 40px rgba(0, 210, 255, 0.2)',
       },
     },
   },
+  plugins: [],
 } satisfies Config
